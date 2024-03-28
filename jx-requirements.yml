@@ -16,16 +16,20 @@ spec:
     provider: minikube
   environments:
   - key: dev
+    owner: BotForJenkinsX
+    repository: jx-cluster-repo
   - key: staging
   - key: production
   ingress:
-    domain: 192.168.49.2.nip.io
+    domain: "\U0001F937"
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: BotForJenkinsX
   repository: bucketrepo
   secretStorage: local
   vault: {}
